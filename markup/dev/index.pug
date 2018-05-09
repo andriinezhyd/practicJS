@@ -1,0 +1,66 @@
+include pug/common/_head
+	block content
+		include pug/common/_header
+		main#main(role="main")
+			.container
+				//- div.block-item#box1
+				//- 	h2  Lorem1 ipsum dolor sit amet
+				//- 	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat rem laudantium dolore nobis doloremque ipsam dolor necessitatibus accusamus atquemolestiae illum harum iste a repudiandae officiis, culpa nostrum. Cumque officiis id, esse recusandae facilis ut veritatis, quos accusamus vitae dolorem elitigendi odio.
+				//- div.block-item#box2 
+				//- 	h2  Lorem2 ipsum dolor sit amet
+				//- 	p Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat rem laudantium dolore nobis doloremque ipsam dolor necessitatibus accusamus aborum dolor quasi expedita eius obcaecati sit quas praesentium veritatis doloremque vero. Sequi expedita laudantium asperiores ipsa ex necessitatibus reiciendis mollitia. Minima reprehenderit repudiandae qui, adipisci distinctio tempora minus maxime vero optio magni facilis ratione provident alias  ut veritatis, quos accusamus vitae dolorem elitigendi odio.
+				//- div.block-item#box3 
+				//- 	h2  Lorem3 ipsum dolor sit amet
+				//- 	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat rem laudantium dolore nobis doloremque ipsam dolor necessitatibus accusamus atque molestiae illum harum iste accusantium placeat, ium veritatis doloremque vero. Sequi expedita laudantium asperiores ipsa ex necessitatibus reiciendis mollitia. Minima reprehenderit repudiandae qui, adipisci distinctio tempora minus maxime vero optio magni facilis ratione pvero. Nesciunt deserunt vel officia rerum voluptate possimus dolorem. Quis fugiat repellat vitae, eaque ex enim deserunt placeat recusandae expedita nesciunt, repudiandae officiis, culpa nostrum. Cumque officiis id, esse recusandae facilis ut veritatis, quos accusamus vitae dolorem elitigendi odio.
+				//- div.block-item#box4 
+				//- 	h2  Lorem4 ipsum dolor sit amet
+				//- 	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat rem lau quod corporis nobis provident minima maiores odio nisi asperiores, iusto quibusdam obcaecati suscipit error nam deleniti architecto vero. Ad, dolores, eligendi. Officia cadipisci facilis dolores, iure dicts fugiat repellat vitae, eaque ex enim deserunt placeat recusandae expedita nesciunt, repudiandae officiis, culpa nostrum. Cumque officiis id, esse recusandae facilis ut veritatis, quos accusamus vitae dolorem elitigendi odio.
+				//- div.block-item#box5 
+				//- 	h2  Lorem5 ipsum dolor sit amet
+				//- 	p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates fugiat rem laudantium dolore nobis doloremque ipsam dolor necius, sapiente nisi assumenda ipsam. Ipsamsci vel quis optio inventore cupiditate, nihil facilis ea, nostrum tempora sed quod! Ratione, blanditiis! Sed debitis rerum ex iste recusandae eligendi dolores ipsam ducimus, distinctio quisquam minus id velit reprehenderit alias voluptas nostrum porro nobis laborum, enim voluptate fugit fuga a suscipit quas. Culpa. Reiciendis hic nisi, veritatis maiores similique iste eum dolores perspiciatis fuga, voluptatem accusamus earum expedita voluptatum non blanditiis odio minus nemo vero. Nesciunt deserunt vel officia rerum voluptate possimus dolorem. Quis fugiat repellat vitae, eaque ex enim deserunt placeat recusandae expedita nesciunt, repudiandae officiis, culpa nostrum. Cumque officiis id, esse recusandae facilis ut veritatis, quos accusamus vitae dolorem elitigendi odio
+				//- 	button click
+				.task2
+					.holder-form
+						form(action="#")
+							input(type="text" id='int01' class='form-child' placeholder='name...')
+							select(id='int02' class='form-child')
+								option(value="Чукча") Чукча
+								option(value="Англичанин") Англичанин
+								option(value="Русский") Русский
+							input(type="email" id='int03' class='form-child' placeholder='email...')
+							//- input(type="text" id='int04' class='form-child' placeholder='name...')
+							//- input(type="text" id='int05' class='form-child' placeholder='name...')
+							.box
+								span.title Выбор пола:
+								label(for="sex1") Мужской
+								input(type="radio" name="radio" value="Мужской") 
+								label(for='sex2') Женский
+								input(type="radio" name="radio" value="Женский")
+							.box
+								label(for='age1') 18-25
+								input(type="checkbox" id='age1' value='18-25')
+								label(for='age2') 26-35
+								input(type="checkbox" id='age2' value='26-35')
+								label(for='age3') 36-65
+								input(type="checkbox" id='age3' value='36-65')
+							.box
+								input(type="submit" value="Add")
+					.data-form
+						ul
+							li
+								span Имя: 
+								span.item#01
+							li
+								span Национальность: 
+								span.item#02
+							li
+								span E-mail: 
+								span.item#03
+							li
+								span Пол: 
+								span.item#radio
+							li
+								span Возраст: 
+								span.item#checkbox
+
+

@@ -1,0 +1,102 @@
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  // background: $base-bactkground-color;
+  position: relative;
+}
+
+.container {
+  @extend %clearfix;
+  max-width: $max-width-center-container;
+  padding: $padding-container;
+  margin: 0 auto;
+  color: #555;
+}
+
+ul {
+	@extend %listreset;
+}
+
+#nav li {		
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.btn {
+	cursor: pointer;	
+}
+
+.block-item {
+	@include animate(background-color border);
+	
+	// margin-left: 20px;	
+	display: block;
+	width: 100%;
+	padding: 20px;
+	height: 500px;
+	// background-color: #f00;
+	border: 2px solid green;
+
+	.active & {
+		background-color: #ffc;
+		border: 2px solid #f00; 
+	}
+}
+
+#main {
+	min-height: 7000px;
+}
+
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	&.fixed {
+		position: fixed;
+	}
+}
+
+.task2 {
+	@extend %clearfix;
+	
+	padding-top: 232px;
+}
+.holder-form {
+	float: left;
+	width: 50%;
+}
+
+.data-form {
+	float: right;
+	width: 50%;
+	text-align: left;
+
+	ul {
+		@extend %listreset;
+		
+		text-align: left;
+	}
+
+	li {
+		padding: 5px 0;
+	}
+}
+
+form {
+	width: 250px;
+	input[type='text'],
+	input[type='email'],
+	select,
+	.box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.title {
+		display: block;
+		padding: 15px 0;
+	}
+}
